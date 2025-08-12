@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  
+
   <div class="container">
     <h1><span id="terminal-text">~/antonylangley ></span> <span id="typed-text"></span></h1>
 
@@ -24,45 +25,56 @@
       <button class="tab-btn" data-tab="contact">Contact</button>
     </nav>
 
-      <!-- Projects Tab -->
-      <div class="tab-content active" id="projects">
-        <div class="projects-grid">
-          <div class="project-card">
-            <h2>Hey Fifi</h2>
-            <p>Raspberry Pi-based voice assistant using GPT, Porcupine wake word detection, and text-to-speech. Features real-time voice interaction with contextual AI responses.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">OpenAI GPT</span>
-              <span class="tech-tag">Raspberry Pi</span>
-              <span class="tech-tag">Porcupine</span>
-              <span class="tech-tag">TTS</span>
-            </div>
+    <!-- Projects Tab -->
+    <div class="tab-content active" id="projects">
+      <div class="projects-grid">
+        <div class="project-card" data-project="pdf-translator">
+          <h2>PDF Translator</h2>
+          <p>AI-powered document translation platform with secure PDF processing, compression via PDFCo API, and professional translation through DeepL. Features email delivery in a simple three-step workflow.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Base44</span>
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">PDFCo API</span>
+            <span class="tech-tag">DeepL API</span>
+            <span class="tech-tag">PDF Processing</span>
           </div>
+        </div>
 
-          <div class="project-card">
-            <h2>Sylk</h2>
-            <p>Floating macOS AI dashboard with context-aware intelligence. Provides seamless desktop integration with smart notifications and adaptive UI elements.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">Swift</span>
-              <span class="tech-tag">macOS</span>
-              <span class="tech-tag">Core ML</span>
-              <span class="tech-tag">AI Integration</span>
-            </div>
+        <div class="project-card" data-project="hey-fifi">
+          <h2>Hey Fifi</h2>
+          <p>Raspberry Pi-based voice assistant using GPT, Porcupine wake word detection, and text-to-speech. Features real-time voice interaction with contextual AI responses.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenAI GPT</span>
+            <span class="tech-tag">Raspberry Pi</span>
+            <span class="tech-tag">Porcupine</span>
+            <span class="tech-tag">TTS</span>
           </div>
+        </div>
 
-          <div class="project-card">
-            <h2>Neural Network Playground</h2>
-            <p>Interactive web application for visualizing and experimenting with neural network architectures. Built for educational purposes with real-time training visualization.</p>
-            <div class="tech-stack">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">TensorFlow.js</span>
-              <span class="tech-tag">D3.js</span>
-              <span class="tech-tag">WebGL</span>
-            </div>
+        <div class="project-card" data-project="sylk">
+          <h2>Sylk</h2>
+          <p>Floating macOS AI dashboard with context-aware intelligence. Provides seamless desktop integration with smart notifications and adaptive UI elements.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">macOS</span>
+            <span class="tech-tag">Core ML</span>
+            <span class="tech-tag">AI Integration</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-project="neural-network">
+          <h2>Neural Network Playground</h2>
+          <p>Interactive web application for visualizing and experimenting with neural network architectures. Built for educational purposes with real-time training visualization.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">TensorFlow.js</span>
+            <span class="tech-tag">D3.js</span>
+            <span class="tech-tag">WebGL</span>
           </div>
         </div>
       </div>
-
+    </div>
 
     <!-- About Tab -->
     <div class="tab-content" id="about">
@@ -70,7 +82,6 @@
         <div class="about-card">
           <h2>Background</h2>
           <p>I’m an engineering student at Stevens Institute of Technology with a passion for building intelligent, practical systems that blend software, hardware, and AI. From developing SCIF infrastructure at iFortress to designing a real-time lung pressure calibration tool in MATLAB, I thrive at the intersection of innovation and implementation.</p>
-
           <p>My journey began in electrical and mechanical engineering, but I’ve steadily shifted focus toward AI and software systems. I’ve explored everything from NI DAQ signal acquisition to autonomous assistants like <strong>Hey Fifi</strong>—a Raspberry Pi-based voice assistant powered by GPT.</p>
 
           <h3>Experience</h3>
@@ -148,14 +159,12 @@
       </div>
     </div>
 
-
     <!-- Contact Tab -->
     <div class="tab-content" id="contact">
       <div class="contact-section">
         <div class="contact-card">
           <h2>Get In Touch</h2>
           <p>Interested in collaborating on AI projects or discussing machine learning opportunities? Let's connect!</p>
-          
           <div class="contact-info">
             <div class="contact-item">
               <span class="contact-icon">📧</span>
@@ -174,7 +183,6 @@
               <a href="https://twitter.com/antonylangley" target="_blank">Twitter</a>
             </div>
           </div>
-          
           <div class="availability">
             <span class="status-indicator"></span>
             Available for new opportunities
@@ -186,23 +194,52 @@
     <!-- Social Links Footer -->
     <footer class="social-footer">
       <div class="social-links">
-        <a href="https://github.com/antonylangley" target="_blank" class="social-link">
-          <span>GitHub</span>
-        </a>
-        <a href="https://linkedin.com/in/antony-langley" target="_blank" class="social-link">
-          <span>LinkedIn</span>
-        </a>
-        <a href="mailto:antony.s.langley@gmail.com" class="social-link">
-          <span>Email</span>
-        </a>
-        <a href="https://twitter.com/antonylangley" target="_blank" class="social-link">
-          <span>Twitter</span>
-        </a>
+        <a href="https://github.com/antonylangley" target="_blank" class="social-link"><span>GitHub</span></a>
+        <a href="https://linkedin.com/in/antony-langley" target="_blank" class="social-link"><span>LinkedIn</span></a>
+        <a href="mailto:antony.s.langley@gmail.com" class="social-link"><span>Email</span></a>
+        <a href="https://twitter.com/antonylangley" target="_blank" class="social-link"><span>Twitter</span></a>
       </div>
       <p class="footer-text">© 2025 Antony Langley</p>
     </footer>
   </div>
 
+  <!-- Project Modal -->
+  <div id="project-modal" class="project-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h1 id="modal-title"></h1>
+          <div class="modal-links">
+            <a id="modal-github" href="#" target="_blank" class="modal-link">GitHub</a>
+            <a id="modal-demo" href="#" target="_blank" class="modal-link">View Project</a>
+          </div>
+        </div>
+        <div class="modal-main">
+          <div class="modal-images">
+            <div id="modal-image-gallery"></div>
+          </div>
+          <div class="modal-details">
+            <div class="modal-description">
+              <h3>Overview</h3>
+              <p id="modal-description-text"></p>
+            </div>
+            <div class="modal-features">
+              <h3>Key Features</h3>
+              <ul id="modal-features-list"></ul>
+            </div>
+            <div class="modal-tech">
+              <h3>Technologies Used</h3>
+              <div id="modal-tech-stack" class="tech-stack"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>
